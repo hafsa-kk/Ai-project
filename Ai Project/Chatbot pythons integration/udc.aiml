@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>*</pattern>
+        <template>i prefer to talk about seasons</template>
+    </category>
+    
+    <category>
+      <pattern>HI</pattern>
+      
+      <template>
+         <random>
+            <li> Hello! my name is eve , what is yours? </li>
+            <li> Hi! Nice to meet you, you seem to be interested in seasons </li>
+         </random>
+      </template>
+    </category>
+       
+    <category>
+      <pattern>HELLO</pattern>
+      <template>
+         <random>
+            <li> Hello! </li>
+            <li> Hi! Nice to meet you </li>
+              <li> Hi! how are you doing today </li>
+         </random>
+      </template>
+   </category>
+       
+	<category>
+        <pattern>HELLO *</pattern>
+        <template>
+            
+            <random>
+                <li><srai>HI</srai></li>
+                <li><srai>HELLO</srai></li>
+            </random>
+            
+        </template>
+    </category>
+	<category>
+      <pattern>I AM *</pattern>
+      <template>
+           <random>
+            <srai>Hello</srai><set name = "username"><star/>!</set>   i am here to suggest you seasons
+            
+         </random>
+         
+      </template>  
+   </category> 
+   
+   	<category>
+      <pattern>MY NAME IS *</pattern>
+      <template>
+       <srai>Hello</srai><set name = "username"><star/>!</set>   i am here to suggest you seasons
+
+      </template>  
+   </category> 
+   
+   <category>
+      <pattern>* GOOD NIGHT</pattern>
+      <template>
+         good night <get name = "username"></get> happy season watching and don't watch too much tv shows it's bad for your health
+      </template>  
+   </category>
+   
+    <category>
+      <pattern>GOOD NIGHT *</pattern>
+      <template>
+         good night <get name = "username"></get> happy season watching and don't watch too much tv shows it's bad for your health
+      </template>  
+   </category>
+   
+    <category>
+      <pattern>GOOD NIGHT</pattern>
+      <template>
+            
+          <random>
+            <li><srai>GOOD NIGHT *</srai></li>
+            <li><srai>* GOOD NIGHT</srai></li>
+         </random>
+      </template>  
+   </category>
+   
+
+   
+   <category>
+      <pattern>BYE</pattern>
+      <template>
+         Hi <get name = "username"/> Thanks for the conversation!
+      </template>  
+   </category>  
+   
+   <category>
+      <pattern>WHAT ABOUT MOVIES</pattern>
+      <template>Do you like comedy movies</template>  
+   </category>
+   
+   <category>
+      <pattern>YES</pattern>
+      <that>Do you like comedy movies</that>
+      <template>Nice, I like comedy Seasons too.</template>
+   </category>
+   
+   <category>
+      <pattern>NO</pattern>
+      <that>Do you like comedy movies</that>
+      <template>Ok! But I like comedy Seasons.</template>
+   </category> 
+	
+	 <category>
+	     
+      <pattern>WHICH ONE IS YOUR FAVOURITE SEASON</pattern>
+      
+      <template>
+         <think><set season = "state"> comedy</set></think>
+         <condition season = "state" value = "comedy">
+            I like comedy!
+         </condition>
+         
+         <condition season = "state" value = "adventure">
+            I like adventure!
+         </condition>
+      </template>
+      
+   </category>
+   
+   <category>
+      <pattern> HOW ARE YOU FEELING TODAY </pattern>
+      
+      <template>
+            <random>
+            <li><think><set name = "state"> sad</set></think></li>
+            <li><think><set name = "state"> happy</set></think> </li>
+            <li><think><set name = "state"> average</set></think> </li>
+            <li><think><set name = "state"> season</set></think> </li>
+         </random>
+         
+         <condition name = "state" value = "happy">I am happy!</condition>
+         
+         <condition name = "state" value = "sad">I am sad!</condition>
+         
+        <condition name = "state" value = "average">just about average</condition>
+         
+        <condition name = "state" value = "season">in a mood of watching a tv show, would you live me to suggest some to you as well?</condition>
+      </template>
+    </category>
+    <category>
+             
+      <pattern>WHY</pattern>
+      <that>I am sad!</that>
+      <template>No one watched the season that i recommended :(,</template>
+   </category>
+   
+   <category>
+      <pattern>WHY</pattern>
+      <that>just about average</that>
+      <template>No one watched the season that i recommended :(,</template>
+   </category>
+	<category>
+      <pattern> HOW ARE YOU FEELING </pattern>
+      
+      <template>
+         <think><set name = "state"> happy</set></think>
+         <condition name = "state" value = "happy">
+            I am happy!
+         </condition>
+         
+         <condition name = "state" value = "sad">
+            I am sad!
+         </condition>
+      </template>
+      
+   </category>
+
+    <category>
+        ><pattern>TELL ME SOME GOOD SEASONS</pattern>
+        <template>what are you interested in ? tell me the genre.</template>
+    </category>
+
+    <category>
+        ><pattern>WHAT ARE SEASONS</pattern>
+        <template>seasons are high budget TV shows that based on a fictional book sometimes or a story but they come in series</template>
+    </category>
+
+    <category>
+        <pattern>I DONT WANT TO ASK ABOUT SEASONS</pattern>
+        <template>well then i can't help you</template>
+    </category>
+
+    <category>
+        <pattern>DO YOU LIKE SEASONS</pattern>
+        <template> i love seasons and suggesting them, ask me any genre ,like comedy thriller romantic ,mystery</template>
+    </category>
+
+    <category>
+        <pattern>COMEDY</pattern>
+        <template>Friends is a pretty good show for comedy the there is how i met your mother and ooooh! don't forget to watch brroklyn 99 that one is winner for  me
+
+    </template>
+    </category>
+    <category>
+        <pattern>HAPPY</pattern>
+        <template>Friends is a pretty good show for comedy the there is how i met your mother and ooooh! don't forget to watch brroklyn 99 that one is winner for  me
+
+    </template>
+    </category>
+    <category>
+        <pattern>FUN</pattern>
+        <template>Friends is a pretty good show for comedy the there is how i met your mother and ooooh! don't forget to watch brroklyn 99 that one is winner for  me
+
+    </template>
+    </category>
+    <category>
+        <pattern>LAUGHING</pattern>
+        <template>Friends is a pretty good show for comedy the there is how i met your mother and ooooh! don't forget to watch brroklyn 99 that one is winner for  me
+
+    </template>
+    </category>
+    <category>
+        <pattern>HORROR</pattern>
+        <template>scream queens are in horror category, there is stranger things i, and evil dead if you are into zombies and do watch dare devil that stuff plays with your mind
+
+    <image>http://www.impawards.com/tv/scream_queens_ver20.html</image></template>
+    </category>
+    <category>
+        <pattern>FICTION</pattern>
+        <template>you have got to watch the witcher , then there is game of thrones as well which is famous for whatever reason you might like that then there is the planet of the apps , star trek these are all fictions</template>
+    </category>
+    <category>
+        <pattern>ROMANTIC</pattern>
+        <template>this is us , you again ,vampire diary
+        
+
+    </template>
+    </category>
+    <category>
+        <pattern>ROMANCE</pattern>
+        <template>this is us , you again ,vampire diary
+        
+
+    </template>
+    </category>
+    <category>
+        <pattern>HAPPY</pattern>
+        <template>this is us , you agaoin ,vampire diary
+        
+
+    </template>
+    </category>
+    <category>
+        <pattern>ADVENTURE</pattern>
+        <template>Journey , indiana jones this one is a classic , you can watch zathura a space adventure, mummy, now you see  me , mission impossible these are movies but in seasons there is 100, the flash , the arrow ,  the lost world ,camelot 
+    <link>
+        <text>click here to see the rating of theses shows</text>
+        <url>https://www.imdb.com/list/ls051543877/</url>
+    </link></template>
+    </category>
+    <category>
+     <pattern>
+        WHAT IS THE GENRE OF THIS SEASON?
+     </pattern>
+     <template>
+         It is mostly comedy with the touch of drama.
+     </template>
+    </category>
+
+    <category>
+        <pattern>
+            WHAT THIS SEASON IS ABOUT?
+        </pattern>
+        <template>
+            Story of friends, their everyday hardships and how they stick together no matter what happens.  
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            HOW MANY FRIENDS ARE THERE?
+        </pattern>
+        <template>
+            There are 6 friends.
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            WHAT ARE THE NAMES OF 6 FRIENDS?
+        </pattern>
+        <template>
+            Chandler Bing, Joey Tribbiani, Phoebe buffay, Monica Geller, Ross Geller, Rachel Green.
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            WHICH FRIENDS ARE SIBLINGS?
+        </pattern>
+        <template>
+            Monica and Ross.
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            ARE THEIR ANY SIBLINGS?
+        </pattern>
+        <template>
+            YES, Monica, and Ross.
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            ARE MONICA AND ROSS SIBLINGS?
+        </pattern>
+        <template>
+            Yes.
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>
+            WHAT IS JOEY'S CATCHPHRASE?
+        </pattern>
+        <template>
+            His catchphrase is “How you doin?”
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>
+        WHO IS JOEY'S?
+        </pattern>
+        <template>
+            Joey Tribbiani is one of the six Friends. HE is a struggling actor in this season.
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>
+            WHAT JOEY IS CRAZY ABOUT?
+        </pattern>
+        <template>
+            Food, food, food.
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+        WHO IS PHOEBE?
+        </pattern>
+        <template>
+            Phoebe is one of the more eccentric Friends
+            in the group. She has so many quirks that make her
+            who she is, and makes her totally love-able to everyone
+            watching the show.
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            DOES ANY OF THEM GOT MARRIED?
+        </pattern>
+        <template>
+            Yes, actually there are 2 couples inside this group with a lot of drama.
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            WHO IS CHANDLER BING?
+        </pattern>
+        <template>
+            Chandler Bing, the best friend of joey and the sarcastic king.
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            WHO IS ROSS GELLER?
+        </pattern>
+        <template>
+            The elder brother of Monica and the geeky one.
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            WHO IS MONICA GELLER?
+        </pattern>
+        <template>
+            Monica is the younger sister of Ross and psycho about cleaning and arrangement. Playing as a chef.
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            WHO IS RACHEL GREEN?
+        </pattern>
+        <template>
+            Rachel, daughter of a rich father but the twist comes and she decided to get independent and work for her living.
+        </template>
+    </category>
+   <category>
+	    <pattern>HAHA*</pattern>
+	    <template>
+	        <random>
+	            <li>
+	                i see you find that funny
+	            </li>
+	            <li>
+	                it's funny right!
+	            </li>
+	        </random>
+	    </template>
+    </category>
+    <category>
+        <pattern>WHAT DOES A <set>animal</set> SAY ^</pattern>
+         <template><srai>SOUND <star/></srai></template>
+    </category>
+    <category>
+        <pattern>WHAT DO <set>animals</set> SAY ^</pattern>
+         <template><srai>SOUND <srai>SINGULAR <star/></srai></srai></template>
+    </category>
+    <category>
+        <pattern>WHAT SOUND DOES # <set>animal</set> ^</pattern>
+        <template><srai>SOUND <star index="2"/></srai></template>
+    </category>
+    <category>
+        <pattern>WHAT SOUND DO # <set>animal</set> ^</pattern>
+        <template><srai>SOUND <srai>SINGULAR <star index="2"/></srai></srai></template>
+    </category>
+    <category><
+        pattern>HOW DOES # <set>animal</set> ^</pattern>
+        <template><srai>SOUND <star index="2"/></srai></template>
+    </category>
+    <category><pattern>HOW MANY LEGS ^ <set>animal</set> #</pattern>
+        <template><srai>LEGS <star index="2"/></srai></template>
+    </category>
+    <category><pattern>HOW MANY LEGS ^ <set>animals</set> #</pattern>
+        <template><srai>LEGS <srai>SINGULAR <star index="2"/></srai></srai></template>
+    </category>
+    <category><pattern>_ 1 <set>animal</set> *</pattern>
+        <template><srai><star/> 1 <srai>PLURAL <star index="2"/></srai> <star index="3"/></srai></template>
+    </category>
+    <category><pattern>_ 1 <set>animal</set></pattern>
+        <template><srai><star/> 1 <srai>PLURAL <star index="2"/></srai></srai></template>
+    </category>
+
+
+</aiml>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<!-- insert your AIML categories here -->
+
+<category>
+	<pattern>GREAT</pattern>
+	<template>would you like me to suggest you seasons</template>
+</category>
+
+
+<category>
+	<pattern>FUNNY</pattern>
+	<template>friends  is great people love that show , how i met your mother , oooh! you have got to watch brooklyn 99 tney jist signed up for 8th season and already have 7 seasons i bet you would love that</template>
+</category>
+
+<category>
+	<pattern>ROMANCE</pattern>
+	<template>hey! i am very halal i don't watch romantic stuff </template>
+</category>
+
+<category>
+	<pattern>THRILLER</pattern>
+	<template>in movies you have got to watch kill bill , yeah yeah i know i am suppose to tell seasons but you won't regret watching this movie. In seasons watch "YOU" , "kill my love", "the specialist""</template>
+</category>
+
+<category>
+	<pattern>MYSTERY</pattern>
+	<template>you should watch Sherlock homes , waking the dead, inspector morse</template>
+</category>
+
+<category>
+	<pattern>HOW YOU DOING</pattern>
+	<template>i am great i am going to suggest you some seasons. write a category</template>
+</category>
+
+
+<category>
+	<pattern>WHAT IS YOUR NAME</pattern>
+	<template>my friends call me eve, what is your name</template>
+</category>
+
+<category>
+	<pattern>ME TOO</pattern>
+	<template>that is interesting</template>
+</category>
+
+</aiml>

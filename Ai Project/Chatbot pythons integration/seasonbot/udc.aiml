@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>i prefer to talk about seasons</template>
+  </category>
+   
+<category>
+    ><pattern>TELL ME SOME GOOD SEASONS</pattern>
+    <template>what are you interested in ? tell me the genre.</template>
+</category>
+
+<category>
+    ><pattern>WHAT ARE SEASONS</pattern>
+    <template>seasons are high budget TV shows that based on a fictional book sometimes or a story but they come in series</template>
+</category>
+
+<category>
+    <pattern>I DONT WANT TO ASK ABOUT SEASONS</pattern>
+    <template>well then i can't help you</template>
+</category>
+
+<category>
+    <pattern>DO YOU LIKE SEASONS</pattern>
+    <template> i love seasons and suggesting them, ask me any genre ,like comedy thriller romantic ,mystery</template>
+</category>
+
+<category>
+    <pattern>COMEDY</pattern>
+    <template>Friends is a pretty good show for comedy the there is how i met your mother and ooooh! don't forget to watch brroklyn 99 that one is winner for  me
+
+</template>
+</category>
+<category>
+    <pattern>HAPPY</pattern>
+    <template>Friends is a pretty good show for comedy the there is how i met your mother and ooooh! don't forget to watch brroklyn 99 that one is winner for  me
+
+</template>
+</category>
+<category>
+    <pattern>FUN</pattern>
+    <template>Friends is a pretty good show for comedy the there is how i met your mother and ooooh! don't forget to watch brroklyn 99 that one is winner for  me
+
+</template>
+</category>
+<category>
+    <pattern>LAUGHING</pattern>
+    <template>Friends is a pretty good show for comedy the there is how i met your mother and ooooh! don't forget to watch brroklyn 99 that one is winner for  me
+
+</template>
+</category>
+<category>
+    <pattern>HORROR</pattern>
+    <template>scream queens are in horror category, there is stranger things i, and evil dead if you are into zombies and do watch dare devil that stuff plays with your mind
+
+<image>http://www.impawards.com/tv/scream_queens_ver20.html</image></template>
+</category>
+<category>
+    <pattern>FICTION</pattern>
+    <template>you have got to watch the witcher , then there is game of thrones as well which is famous for whatever reason you might like that then there is the planet of the apps , star trek these are all fictions</template>
+</category>
+<category>
+    <pattern>ROMANTIC</pattern>
+    <template>this is us , you again ,vampire diary
+    
+
+</template>
+</category>
+<category>
+    <pattern>ROMANCE</pattern>
+    <template>this is us , you again ,vampire diary
+    
+
+</template>
+</category>
+<category>
+    <pattern>HAPPY</pattern>
+    <template>this is us , you agaoin ,vampire diary
+    
+
+</template>
+</category>
+<category>
+    <pattern>ADVENTURE</pattern>
+    <template>Journey , indiana jones this one is a classic , you can watch zathura a space adventure, mummy, now you see  me , mission impossible these are movies but in seasons there is 100, the flash , the arrow ,  the lost world ,camelot 
+<link>
+    <text>click here to see the rating of theses shows</text>
+    <url>https://www.imdb.com/list/ls051543877/</url>
+</link></template>
+</category>
+</aiml>

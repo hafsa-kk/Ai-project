@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+	<!-- insert your AIML categories here -->
+	 <category>
+      <pattern>HI</pattern>
+      
+      <template>
+         <random>
+            <li> Hello! my name is eve , what is yours? </li>
+            <li> Hi! Nice to meet you, you seem to be interested in seasons </li>
+         </random>
+      </template>
+   </category>
+       
+    <category>
+      <pattern>HELLO</pattern>
+      <template>
+         <random>
+            <li> Hello! </li>
+            <li> Hi! Nice to meet you </li>
+              <li> Hi! how are you doing today </li>
+         </random>
+      </template>
+   </category>
+       
+	<category>
+    <pattern>HELLO *</pattern>
+    <template>
+        
+          <random>
+            <li><srai>HI</srai></li>
+            <li><srai>HELLO</srai></li>
+         </random>
+        
+    </template>
+    </category>
+	<category>
+      <pattern>I AM *</pattern>
+      <template>
+           <random>
+            <srai>Hello</srai><set name = "username"><star/>!</set>   i am here to suggest you seasons
+            
+         </random>
+         
+      </template>  
+   </category> 
+   
+   	<category>
+      <pattern>MY NAME IS *</pattern>
+      <template>
+       <srai>Hello</srai><set name = "username"><star/>!</set>   i am here to suggest you seasons
+
+      </template>  
+   </category> 
+   
+   <category>
+      <pattern>* GOOD NIGHT</pattern>
+      <template>
+         good night <get name = "username"></get> happy season watching and don't watch too much tv shows it's bad for your health
+      </template>  
+   </category>
+   
+    <category>
+      <pattern>GOOD NIGHT *</pattern>
+      <template>
+         good night <get name = "username"></get> happy season watching and don't watch too much tv shows it's bad for your health
+      </template>  
+   </category>
+   
+    <category>
+      <pattern>GOOD NIGHT</pattern>
+      <template>
+            
+          <random>
+            <li><srai>GOOD NIGHT *</srai></li>
+            <li><srai>* GOOD NIGHT</srai></li>
+         </random>
+      </template>  
+   </category>
+   
+
+   
+   <category>
+      <pattern>BYE</pattern>
+      <template>
+         Hi <get name = "username"/> Thanks for the conversation!
+      </template>  
+   </category>  
+   
+   <category>
+      <pattern>WHAT ABOUT MOVIES</pattern>
+      <template>Do you like comedy movies</template>  
+   </category>
+   
+   <category>
+      <pattern>YES</pattern>
+      <that>Do you like comedy movies</that>
+      <template>Nice, I like comedy Seasons too.</template>
+   </category>
+   
+   <category>
+      <pattern>NO</pattern>
+      <that>Do you like comedy movies</that>
+      <template>Ok! But I like comedy Seasons.</template>
+   </category> 
+	
+	 <category>
+	     
+      <pattern>WHICH ONE IS YOUR FAVOURITE SEASON</pattern>
+      
+      <template>
+         <think><set season = "state"> comedy</set></think>
+         <condition season = "state" value = "comedy">
+            I like comedy!
+         </condition>
+         
+         <condition season = "state" value = "adventure">
+            I like adventure!
+         </condition>
+      </template>
+      
+   </category>
+   
+   <category>
+      <pattern> HOW ARE YOU FEELING TODAY </pattern>
+      
+      <template>
+            <random>
+            <li><think><set name = "state"> sad</set></think></li>
+            <li><think><set name = "state"> happy</set></think> </li>
+            <li><think><set name = "state"> average</set></think> </li>
+            <li><think><set name = "state"> season</set></think> </li>
+         </random>
+         
+         <condition name = "state" value = "happy">I am happy!</condition>
+         
+         <condition name = "state" value = "sad">I am sad!</condition>
+         
+        <condition name = "state" value = "average">just about average</condition>
+         
+        <condition name = "state" value = "season">in a mood of watching a tv show, would you live me to suggest some to you as well?</condition>
+      </template>
+      
+         <category>
+             
+      <pattern>WHY</pattern>
+      <that>I am sad!</that>
+      <template>No one watched the season that i recommended :(,</template>
+   </category>
+   
+   <category>
+      <pattern>WHY</pattern>
+      <that>just about average</that>
+      <template>No one watched the season that i recommended :(,</template>
+   </category>
+      
+   </category>
+	
+	   <category>
+      <pattern> HOW ARE YOU FEELING </pattern>
+      
+      <template>
+         <think><set name = "state"> happy</set></think>
+         <condition name = "state" value = "happy">
+            I am happy!
+         </condition>
+         
+         <condition name = "state" value = "sad">
+            I am sad!
+         </condition>
+      </template>
+      
+   </category>
+</aiml>
